@@ -1,0 +1,193 @@
+ body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* sign-up form */
+.signup-form {
+  width: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#fff;
+  padding:20px;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* login form */
+.login-form-container {
+  width: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#fff;
+  padding:20px;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* forgot password */
+.forgot-password-container{
+  width: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#fff;
+  padding:20px;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* logo */
+
+.logo {
+  height: 60px;
+} 
+
+/* form -box */
+.input100 {
+  font-family: Raleway-SemiBold;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #686868;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 3px;
+  padding: 0 30px 0 65px;
+}
+
+/* title */
+
+.title {
+    font-family: Raleway-Black;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.forgot-password-title{
+    font-family: Raleway-Black;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.2;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+}
+
+.sign-in-title{
+    font-family: Raleway-Black;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+/* button */
+.button-signup{
+    font-family: Raleway-Bold;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 62px;
+    border-radius: 10px;
+    background: #d79a26;
+    border: none;
+}
+/*#signin{
+  background: linear-gradient(#74923b,#ee9c22);
+}*/
+
+/* sidebar navigation */
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #1b1c1d;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background:#1b1c1d;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+#sidebar ul li a:hover {
+  color: #7386D5;
+  background: #fff;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  /* full screen */
+  width: 100vw;
+  height: 100vh;
+  /* transparent black */
+  background: rgba(0, 0, 0, 0.7);
+  /* middle layer, i.e. appears below the sidebar */
+  z-index: 998;
+  opacity: 0;
+  /* animate the transition */
+  transition: all 0.5s ease-in-out;
+}
+/* display .overlay when it has the .active class */
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  /* top right corner of the sidebar */
+  top: 10px;
+  right: 10px;
+}
